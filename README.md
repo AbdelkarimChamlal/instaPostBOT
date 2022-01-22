@@ -1,20 +1,55 @@
+
 # instaPostBOT
-this is a bot coded using python, its task is to chose a random picture from a folder and post it to instagram
 
-please note this bot is using a non official instagram API "instagrapi"
+**this is a bot coded using python, all it does is post a picture from a specified folder to Instagram.**
+
+## Use case?
+going on a holiday ? have a meme profile?...etc.  all you have to do is save what you want to post to a folder and the bot will take sure to post them later one by one.
+
+## Installation
+
+please note this bot is using a non official Instagram API [instagrapi](https://adw0rd.github.io/instagrapi/)
 you can install it by running the command 
-"pip install instagrapi"
 
-all you need to run this bot is to change the username and password in the configs file
-and also change the sleep duration to what you want 
-the sleep duration in seconds
+    pip install instagrapi
 
-also make sure to change the absulote path to the images folder
-make sure the images you want to post respect the ration aspect that instagram puts.
+## Configuration
+to configure the bot first thing is to open:
 
-after configuring the bot
-all you have to do to run in is to start the run.py folder
+    configs.py
+
+make sure to change the username and password to yours
+
+    username = "username" 
+    password = "password"
+also make sure to change the picsFolderPath to yours
+
+    picsFolderPath = "C://Users//UserName//Desktop//instaBot//pics//"
+you also can change the duration between every post
+
+    sleepDuration = random.randint(3600, 6 * 3600) 
+
+it is set by defaults to post every hour to 6 hours, you can change that either to a fixed period or random 
+
+## Notes
+
+ 1. Please make sure the images you provide respect Instagram's image
+    aspect Ratio.
+ 2. please note that this is a 20min project, so there may be problems
+    that you may run into.
+ 3. you take full responsibility for running this bot because it is
+    using unofficial API.
+
+## Run The BOT
+
+you can simply run this bot by running the following command
+
+    python run.py
+
+## NEXT?
+well I will add more features every now and then to this project, posting videos, reels and stories.
+*or you can do that and commit it :3*
 
 
-please note that this is a 20min project, so there may be problems that you may run into
-in that case you can submit your  bugs and i will do my best to take a look at them and fix them as soon as possible.
+
+
